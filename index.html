@@ -111,6 +111,12 @@
   .repcard { background:rgba(255,255,255,.06); border:1px solid rgba(200,169,106,.35); border-radius:14px; padding:22px; }
   .repcard b { display:block; font-family:"Playfair Display", Georgia, "Noto Serif SC", serif; font-size:30px; color:#EBCB9B; margin-bottom:8px; }
   .repcard span { color:#DCE7DC; font-size:14.5px; line-height:1.65; display:block; }
+  .tiles { display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:14px; margin-top:22px; }
+  .tile { background:#fff; border:1px solid #EDEAE1; border-radius:16px; padding:20px; text-decoration:none; display:block; box-shadow:0 3px 14px rgba(31,77,58,.05); transition:all .18s ease; }
+  .tile:hover { border-color:#C8A96A; transform:translateY(-2px); box-shadow:0 10px 22px rgba(31,77,58,.10); }
+  .tile b { font-family:"Playfair Display", Georgia, "Noto Serif SC", "Songti SC", serif; font-size:20px; color:#1F4D3A; display:block; }
+  .tprob { display:block; color:#6B7268; font-size:13.5px; margin-top:7px; line-height:1.55; }
+  .tmeta { display:block; color:#A8823D; font-size:13px; font-weight:700; margin-top:10px; letter-spacing:.06em; }
   @media (max-width:760px) { .cathead { flex-direction:column; align-items:stretch; } .cathead .ban { width:100%; height:150px; } }
   .grid { display:grid; grid-template-columns:1fr 1fr; gap:18px; margin-top:20px; }
   .item { display:flex; gap:16px; background:#fff; border:1px solid #EDEAE1; border-radius:14px; padding:14px; box-shadow:0 3px 14px rgba(31,77,58,.05); }
@@ -171,6 +177,9 @@
     .galempty { height:130px; }
     .galgrid img { height:130px; }
     .faq { padding:14px 16px; }
+    .tiles { grid-template-columns:1fr 1fr; gap:10px; }
+    .tile { padding:15px; }
+    .tile b { font-size:16.5px; }
     nav a:not(.book), .logotag { display:none; }
     .mobilebar { display:flex; position:fixed; left:0; right:0; bottom:0; z-index:60; background:#143527; padding:10px 14px calc(10px + env(safe-area-inset-bottom)); gap:10px; }
     .mobilebar a { flex:1; text-align:center; padding:13px; border-radius:999px; text-decoration:none; font-weight:700; color:#fff; background:#A8823D; }
@@ -204,6 +213,18 @@
 </div></div>
 
 <div class="wrap">
+  <div class="kick" id="concerns"><span class="en">BY CONCERN</span><span class="cn">按问题选</span></div>
+  <h2 class="sec"><span class="cn">头发问题，你需要的，我们都有</span><span class="en">Whatever your hair concern, we have the care for it</span></h2>
+  <div class="tiles">
+      <a class="tile" href="#cat-0"><b><span class="cn">脱发改善</span><span class="en">Thinning Hair</span></b><span class="tprob"><span class="cn">发缝变宽 · 掉发多 · 头发稀疏</span><span class="en">Widening part · shedding · thinning</span></span><span class="tmeta"><span class="cn">2 个项目</span><span class="en">2 treatments</span> ›</span></a>
+      <a class="tile" href="#cat-1"><b><span class="cn">头皮改善</span><span class="en">Scalp Management</span></b><span class="tprob"><span class="cn">头油 · 头屑 · 头痒 · 毛孔堵塞</span><span class="en">Oily scalp · dandruff · itch · clogged follicles</span></span><span class="tmeta"><span class="cn">3 个项目</span><span class="en">3 treatments</span> ›</span></a>
+      <a class="tile" href="#cat-2"><b><span class="cn">白发改善</span><span class="en">Gray Hair Care</span></b><span class="tprob"><span class="cn">白发盖不住 · 染发怕伤头皮</span><span class="en">Grays showing · worried about harsh dye</span></span><span class="tmeta"><span class="cn">2 个项目</span><span class="en">2 treatments</span> ›</span></a>
+      <a class="tile" href="#cat-3"><b><span class="cn">发质改善</span><span class="en">Hair Quality Care</span></b><span class="tprob"><span class="cn">干枯 · 毛躁 · 烫染受损</span><span class="en">Dry · frizzy · color- or perm-damaged</span></span><span class="tmeta"><span class="cn">8 个项目</span><span class="en">8 treatments</span> ›</span></a>
+      <a class="tile" href="#cat-4"><b><span class="cn">面部护理（眼周瑜伽）</span><span class="en">Beauty & Eye Care</span></b><span class="tprob"><span class="cn">眼疲劳 · 面部浮肿暗沉</span><span class="en">Tired eyes · dull, puffy face</span></span><span class="tmeta"><span class="cn">4 个项目</span><span class="en">4 treatments</span> ›</span></a>
+      <a class="tile" href="#cat-5"><b><span class="cn">普洗放松</span><span class="en">Relaxation</span></b><span class="tprob"><span class="cn">头颈肩酸 · 累 · 只想放松</span><span class="en">Tight head, neck & shoulders · just need to unwind</span></span><span class="tmeta"><span class="cn">6 个项目</span><span class="en">6 treatments</span> ›</span></a>
+      <a class="tile" href="#cat-6"><b><span class="cn">组合套餐</span><span class="en">Combo Packages</span></b><span class="tprob"><span class="cn">一次做两样 · 更划算</span><span class="en">Two cares in one visit · better value</span></span><span class="tmeta"><span class="cn">3 个项目</span><span class="en">3 treatments</span> ›</span></a>
+  </div>
+
   <div class="kick" id="favorites"><span class="en">GUEST FAVORITES</span><span class="cn">招牌推荐</span></div>
   <h2 class="sec"><span class="en">Most-booked treatments</span><span class="cn">最受欢迎的项目</span></h2>
   <p class="sec-sub cn">第一次来不知道选哪个，先看这四个主题——头皮、眼部、白发、发质，店里最招牌的四条线。</p>
