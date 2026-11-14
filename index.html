@@ -74,6 +74,7 @@
   .catbar::-webkit-scrollbar { display:none; }
   .catbar a { color:#1F4D3A; background:#fff; text-decoration:none; white-space:nowrap; font-size:15.5px; font-weight:600; font-family:"Playfair Display", Georgia, "Noto Serif SC", "Songti SC", serif; letter-spacing:.05em; padding:9px 19px; border-radius:999px; border:1px solid #DCD2B6; box-shadow:0 2px 8px rgba(31,77,58,.08); transition:all .18s ease; }
   .catbar a:active, .catbar a:hover { background:#1F4D3A; color:#EBCB9B; border-color:#1F4D3A; transform:translateY(-1px); box-shadow:0 6px 14px rgba(31,77,58,.18); }
+  .catbar .short { display:none; }
   .catpick { display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:14px; margin-top:24px; }
   .catcard { display:block; border-radius:16px; overflow:hidden; text-decoration:none; background-size:cover; background-position:center; min-height:190px; position:relative; }
   .cc-shade { position:absolute; inset:0; background:linear-gradient(180deg, rgba(15,32,24,.05) 30%, rgba(15,32,24,.82)); padding:18px; display:flex; flex-direction:column; justify-content:flex-end; }
@@ -151,8 +152,11 @@
   .mobilebar { display:none; }
   @media (max-width:760px) {
     body { overflow-x:clip; }
-    .catbar { flex-wrap:wrap; overflow-x:visible; gap:8px; padding:10px 4vw; }
-    .catbar a { font-size:14px; padding:8px 13px; }
+    .catbar { flex-wrap:nowrap; overflow-x:visible; gap:0; padding:8px 3vw; justify-content:space-between; }
+    .catbar a { background:transparent; border:none; box-shadow:none; font-size:14px; padding:8px 2px; letter-spacing:.02em; }
+    .catbar a:active, .catbar a:hover { background:transparent; color:#A8823D; transform:none; box-shadow:none; }
+    .catbar .full { display:none; }
+    .catbar .short { display:inline; }
     .grid { grid-template-columns:1fr; }
     .split { grid-template-columns:1fr; }
     header { padding:13px 4vw; gap:10px; }
@@ -188,7 +192,7 @@
 </style></head><body class="lang-cn">
 <header><div class="logo">YOUNG HAIR <b>氧发堂</b></div><div class="logotag"><span class="en">3,400 locations in China · First U.S. store · Los Angeles, CA</span><span class="cn">国内3400家 · 美国首店 · 加州洛杉矶</span></div>
 <nav><a href="#favorites"><span class="cn">招牌推荐</span><span class="en">Favorites</span></a><a href="#visit"><span class="cn">第一次来</span><span class="en">First Visit</span></a><a href="#menu"><span class="cn">项目菜单</span><span class="en">Menu</span></a><a href="#faq"><span class="cn">常见问题</span><span class="en">FAQ</span></a><a class="book" href="https://book.squareup.com/appointments/2f3vagoj909uid/location/LSC7XWH9GM9HG/services"><span class="en">Book</span><span class="cn">预约</span></a></nav></header>
-<div class="catbar"><a href="#cat-0"><span class="cn">脱发改善</span><span class="en">Thinning Hair</span></a><a href="#cat-1"><span class="cn">头皮改善</span><span class="en">Scalp Management</span></a><a href="#cat-2"><span class="cn">白发改善</span><span class="en">Gray Hair Care</span></a><a href="#cat-3"><span class="cn">发质改善</span><span class="en">Hair Quality Care</span></a><a href="#cat-4"><span class="cn">面部护理（眼周瑜伽）</span><span class="en">Beauty & Eye Care</span></a><a href="#cat-5"><span class="cn">普洗放松</span><span class="en">Relaxation</span></a><a href="#cat-6"><span class="cn">组合套餐</span><span class="en">Combo Packages</span></a></div>
+<div class="catbar"><a href="#cat-0"><span class="cn full">脱发改善</span><span class="cn short">脱发</span><span class="en full">Thinning Hair</span><span class="en short">Thinning</span></a><a href="#cat-1"><span class="cn full">头皮改善</span><span class="cn short">头皮</span><span class="en full">Scalp Management</span><span class="en short">Scalp</span></a><a href="#cat-2"><span class="cn full">白发改善</span><span class="cn short">白发</span><span class="en full">Gray Hair Care</span><span class="en short">Gray</span></a><a href="#cat-3"><span class="cn full">发质改善</span><span class="cn short">发质</span><span class="en full">Hair Quality Care</span><span class="en short">Repair</span></a><a href="#cat-4"><span class="cn full">面部护理（眼周瑜伽）</span><span class="cn short">眼周</span><span class="en full">Beauty & Eye Care</span><span class="en short">Eye Yoga</span></a><a href="#cat-5"><span class="cn full">普洗放松</span><span class="cn short">放松</span><span class="en full">Relaxation</span><span class="en short">Relax</span></a><a href="#cat-6"><span class="cn full">组合套餐</span><span class="cn short">套餐</span><span class="en full">Combo Packages</span><span class="en short">Combos</span></a></div>
 
 <div class="hero">
   <div class="hero-shade"></div><span class="langtoggle herotoggle"><button data-l="en" onclick="setLang('en')">EN</button><button data-l="cn" onclick="setLang('cn')">中文</button></span>
