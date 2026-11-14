@@ -97,6 +97,13 @@
   .galgrid figure { margin:0; background:#fff; border:1px solid #EDEAE1; border-radius:14px; overflow:hidden; }
   .galgrid img { width:100%; height:200px; object-fit:cover; display:block; }
   .galgrid figcaption { padding:10px 14px; font-size:14.5px; font-weight:600; color:#1F4D3A; }
+  .repband { background:#1F4D3A; border-radius:20px; padding:36px 34px; margin-top:70px; }
+  .repband .kick { margin-top:0; color:#EBCB9B; }
+  .repband h2.sec { color:#fff; border-bottom-color:rgba(200,169,106,.45); }
+  .repgrid { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:16px; margin-top:22px; }
+  .repcard { background:rgba(255,255,255,.06); border:1px solid rgba(200,169,106,.35); border-radius:14px; padding:22px; }
+  .repcard b { display:block; font-family:"Playfair Display", Georgia, "Noto Serif SC", serif; font-size:30px; color:#EBCB9B; margin-bottom:8px; }
+  .repcard span { color:#DCE7DC; font-size:14.5px; line-height:1.65; display:block; }
   @media (max-width:760px) { .cathead { flex-direction:column; align-items:stretch; } .cathead .ban { width:100%; height:150px; } }
   .grid { display:grid; grid-template-columns:1fr 1fr; gap:18px; margin-top:20px; }
   .item { display:flex; gap:16px; background:#fff; border:1px solid #EDEAE1; border-radius:14px; padding:14px; box-shadow:0 3px 14px rgba(31,77,58,.05); }
@@ -216,6 +223,16 @@
         <div class="fav-price">$200 <span>· 60 min</span></div>
       </div>
     </a></div>
+
+  <div class="repband">
+    <div class="kick"><span class="en">WORD OF MOUTH</span><span class="cn">口碑与复购</span></div>
+    <h2 class="sec"><span class="en">New guests check reviews. Regulars come back for the change.</span><span class="cn">新客看评价，回头客看变化</span></h2>
+    <div class="repgrid">
+      <div class="repcard"><b>4.7 ★</b><span class="cn">Google 评分，100+ 条真实评价——这家店的新客，大多是看评价找来的</span><span class="en">Google rating across 100+ guest reviews — most new guests find us through them</span></div>
+      <div class="repcard"><b><span class="cn">28 天建档</span><span class="en">28-day file</span></b><span class="cn">每次头皮拍照存档，按 28 天周期对比。变化看得见，客人自己愿意接着做</span><span class="en">Scalp photos on file, compared every 28 days. Progress you can see is worth coming back for</span></div>
+      <div class="repcard"><b><span class="cn">不推销</span><span class="en">No hard sell</span></b><span class="cn">先检测、再推荐；做一次还是做疗程，我们实话告诉你——信任在，复购就在</span><span class="en">Analysis first, honest advice — one visit or a course, we tell you which you actually need</span></div>
+    </div>
+  </div>
 
   <div class="kick"><span class="en">WHY THE SCALP</span><span class="cn">为什么先看头皮</span></div>
   <h2 class="sec"><span class="en">Hair problems are usually scalp problems.</span><span class="cn">头发的问题，大多出在头皮上。</span></h2>
