@@ -144,10 +144,31 @@
   footer { padding:26px 5vw 90px; color:#9a9e9a; font-size:13px; text-align:center; }
   .mobilebar { display:none; }
   @media (max-width:760px) {
+    body { overflow-x:clip; }
     .grid { grid-template-columns:1fr; }
     .split { grid-template-columns:1fr; }
-    .hero h1 { font-size:40px; }
+    header { padding:13px 4vw; gap:10px; }
+    .logo { font-size:16.5px; letter-spacing:.08em; white-space:nowrap; flex:none; }
+    nav { flex:none; }
+    nav a.book { white-space:nowrap; padding:8px 17px; font-size:14.5px; }
+    .hero h1 { font-size:34px; line-height:1.25; letter-spacing:0; }
     .hero { min-height:82vh; }
+    .hero-in { padding:104px 5vw 44px; }
+    .hero .kick { font-size:11.5px; letter-spacing:.12em; line-height:1.7; }
+    .hsub { font-size:15.5px; }
+    section h2 { font-size:29px; }
+    .kick { margin-top:52px; }
+    .ban { height:168px; margin-top:16px; }
+    .item { gap:12px; padding:12px; }
+    .item img { width:104px; height:104px; }
+    .repband { padding:26px 20px; margin-top:52px; }
+    .repcard b { font-size:26px; }
+    .booking { padding:38px 5vw; margin-top:56px; }
+    .mapwrap iframe { height:260px; }
+    .galgrid { grid-template-columns:1fr 1fr; gap:10px; }
+    .galempty { height:130px; }
+    .galgrid img { height:130px; }
+    .faq { padding:14px 16px; }
     nav a:not(.book), .logotag { display:none; }
     .mobilebar { display:flex; position:fixed; left:0; right:0; bottom:0; z-index:60; background:#143527; padding:10px 14px calc(10px + env(safe-area-inset-bottom)); gap:10px; }
     .mobilebar a { flex:1; text-align:center; padding:13px; border-radius:999px; text-decoration:none; font-weight:700; color:#fff; background:#A8823D; }
