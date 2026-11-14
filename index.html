@@ -11,9 +11,10 @@
   .langtoggle { display:inline-flex; border:1.5px solid #1F4D3A; border-radius:999px; overflow:hidden; margin-left:22px; vertical-align:middle; }
   .langtoggle button { border:0; background:transparent; color:#1F4D3A; font-size:14px; font-weight:700; padding:7px 15px; cursor:pointer; font-family:inherit; }
   .langtoggle button.on { background:#1F4D3A; color:#fff; }
-  .catbar .langtoggle { margin-left:auto; border-color:rgba(255,255,255,.55); flex:none; align-self:center; }
-  .catbar .langtoggle button { color:#fff; padding:5px 12px; font-size:13.5px; }
-  .catbar .langtoggle button.on { background:#A8823D; }
+  .herotoggle { position:absolute; top:16px; left:16px; z-index:6; margin:0; border-color:rgba(255,255,255,.65); background:rgba(18,38,28,.45); }
+  .herotoggle button { color:#fff; padding:6px 14px; font-size:13.5px; }
+  .herotoggle button.on { background:#A8823D; }
+  .logotag { font-size:13.5px; font-weight:700; color:#A8823D; letter-spacing:.5px; white-space:nowrap; }
   body.lang-en .cc-en { font-size:24px; font-weight:800; color:#fff; }
   body.lang-cn .it-cn { font-size:16.5px; font-weight:700; color:#22241f; }
   .why-list span { display:block; }
@@ -123,18 +124,18 @@
     .split { grid-template-columns:1fr; }
     .hero h1 { font-size:40px; }
     .hero { min-height:82vh; }
-    nav a:not(.book) { display:none; }
+    nav a:not(.book), .logotag { display:none; }
     .mobilebar { display:flex; position:fixed; left:0; right:0; bottom:0; z-index:60; background:#143527; padding:10px 14px calc(10px + env(safe-area-inset-bottom)); gap:10px; }
     .mobilebar a { flex:1; text-align:center; padding:13px; border-radius:999px; text-decoration:none; font-weight:700; color:#fff; background:#A8823D; }
     .mobilebar a.call { background:transparent; border:1.5px solid rgba(255,255,255,.6); }
   }
 </style></head><body class="lang-en">
-<header><div class="logo">YOUNG HAIR <b>氧发堂</b></div>
+<header><div class="logo">YOUNG HAIR <b>氧发堂</b></div><div class="logotag"><span class="en">3,400 locations in China · First U.S. store · Los Angeles, CA</span><span class="cn">国内3400家 · 美国首店 · 加州洛杉矶</span></div>
 <nav><a href="#favorites"><span class="cn">招牌推荐</span><span class="en">Favorites</span></a><a href="#visit"><span class="cn">第一次来</span><span class="en">First Visit</span></a><a href="#menu"><span class="cn">项目菜单</span><span class="en">Menu</span></a><a href="#faq"><span class="cn">常见问题</span><span class="en">FAQ</span></a><a class="book" href="https://book.squareup.com/appointments/2f3vagoj909uid/location/LSC7XWH9GM9HG/services"><span class="en">Book</span><span class="cn">预约</span></a><span class="langtoggle"><button data-l="en" onclick="setLang('en')">EN</button><button data-l="cn" onclick="setLang('cn')">中文</button></span></nav></header>
-<div class="catbar"><a href="#cat-0"><span class="cn">脱发改善</span><span class="en">Thinning Hair</span></a><a href="#cat-1"><span class="cn">头皮改善</span><span class="en">Scalp Management</span></a><a href="#cat-2"><span class="cn">白发改善</span><span class="en">Gray Hair Care</span></a><a href="#cat-3"><span class="cn">发质改善</span><span class="en">Hair Quality Care</span></a><a href="#cat-4"><span class="cn">面部护理（眼周瑜伽）</span><span class="en">Beauty & Eye Care</span></a><a href="#cat-5"><span class="cn">普洗放松</span><span class="en">Relaxation</span></a><a href="#cat-6"><span class="cn">组合套餐</span><span class="en">Combo Packages</span></a><span class="langtoggle"><button data-l="en" onclick="setLang('en')">EN</button><button data-l="cn" onclick="setLang('cn')">中文</button></span></div>
+<div class="catbar"><a href="#cat-0"><span class="cn">脱发改善</span><span class="en">Thinning Hair</span></a><a href="#cat-1"><span class="cn">头皮改善</span><span class="en">Scalp Management</span></a><a href="#cat-2"><span class="cn">白发改善</span><span class="en">Gray Hair Care</span></a><a href="#cat-3"><span class="cn">发质改善</span><span class="en">Hair Quality Care</span></a><a href="#cat-4"><span class="cn">面部护理（眼周瑜伽）</span><span class="en">Beauty & Eye Care</span></a><a href="#cat-5"><span class="cn">普洗放松</span><span class="en">Relaxation</span></a><a href="#cat-6"><span class="cn">组合套餐</span><span class="en">Combo Packages</span></a></div>
 
 <div class="hero">
-  <div class="hero-shade"></div>
+  <div class="hero-shade"></div><span class="langtoggle herotoggle"><button data-l="en" onclick="setLang('en')">EN</button><button data-l="cn" onclick="setLang('cn')">中文</button></span>
   <div class="hero-in">
     <div class="kicker en">3,400 LOCATIONS IN CHINA · FIRST U.S. STORE · LOS ANGELES, CALIFORNIA</div><div class="kicker cn">国内3400家 · 美国首店 · 加州洛杉矶</div>
     <h1 class="en">Healthier hair starts at the scalp.</h1><h1 class="cn">健康的头发，从头皮开始。</h1>
