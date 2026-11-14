@@ -70,10 +70,10 @@
   .steps3 i { color:#8a8f8a; font-style:normal; font-size:13.5px; display:block; margin-bottom:8px; }
   .steps3 span { color:#5A605A; font-size:14.5px; line-height:1.6; display:block; }
   .steps3 span.cn { color:#44483f; margin-bottom:6px; }
-  .catbar { position:sticky; top:0; z-index:50; background:#1F4D3A; display:flex; gap:6px; overflow-x:auto; padding:10px 5vw; scrollbar-width:none; }
+  .catbar { position:sticky; top:0; z-index:50; background:rgba(251,249,245,.94); backdrop-filter:blur(10px); -webkit-backdrop-filter:blur(10px); display:flex; gap:9px; overflow-x:auto; padding:12px 5vw; scrollbar-width:none; border-bottom:1px solid #E7DFC8; box-shadow:0 8px 20px rgba(31,77,58,.07); }
   .catbar::-webkit-scrollbar { display:none; }
-  .catbar a { color:#fff; text-decoration:none; white-space:nowrap; font-size:16.5px; font-weight:600; padding:8px 16px; border-radius:999px; border:1px solid rgba(255,255,255,.35); }
-  .catbar a:active, .catbar a:hover { background:#A8823D; border-color:#A8823D; }
+  .catbar a { color:#1F4D3A; background:#fff; text-decoration:none; white-space:nowrap; font-size:15.5px; font-weight:600; font-family:"Playfair Display", Georgia, "Noto Serif SC", "Songti SC", serif; letter-spacing:.05em; padding:9px 19px; border-radius:999px; border:1px solid #DCD2B6; box-shadow:0 2px 8px rgba(31,77,58,.08); transition:all .18s ease; }
+  .catbar a:active, .catbar a:hover { background:#1F4D3A; color:#EBCB9B; border-color:#1F4D3A; transform:translateY(-1px); box-shadow:0 6px 14px rgba(31,77,58,.18); }
   .catpick { display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:14px; margin-top:24px; }
   .catcard { display:block; border-radius:16px; overflow:hidden; text-decoration:none; background-size:cover; background-position:center; min-height:190px; position:relative; }
   .cc-shade { position:absolute; inset:0; background:linear-gradient(180deg, rgba(15,32,24,.05) 30%, rgba(15,32,24,.82)); padding:18px; display:flex; flex-direction:column; justify-content:flex-end; }
